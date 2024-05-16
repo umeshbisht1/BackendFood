@@ -13,7 +13,7 @@ const dispatch=useDispatch();
   const handleAddToCart = async(data) => {
     if(!data)
       return ;
-     await axios.post('/api/v1/addtocart',data).then(res=>{
+     await axios.post('https://ecommerce-a7xz.onrender.com/api/v1/addtocart',data).then(res=>{
          dispatch(setvalue(res.data.data.cart.length))
      }).catch(err=>console.log(err))
     
