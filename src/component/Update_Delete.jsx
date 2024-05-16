@@ -51,7 +51,7 @@ const Update_Delete = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/v1/products?page=${page}`); // Adjust the API endpoint accordingly
+        const response = await fetch(`https://ecommerce-a7xz.onrender.com/api/v1/products?page=${page}`); // Adjust the API endpoint accordingly
         const data = await response.json();
         setProducts(data.data); // Assuming "data" property contains the array of products
         setLoading(false);
@@ -79,7 +79,7 @@ const Update_Delete = () => {
 
   const handleDelete = async (product) => {
     try {
-      const del = await fetch(`/api/v1/admin/update/${product}`, {
+      const del = await fetch(`https://ecommerce-a7xz.onrender.com/api/v1/admin/update/${product}`, {
         method: "DELETE",
       });
       const data = await del.json();
