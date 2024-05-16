@@ -9,7 +9,7 @@ function Orders() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/v1/admin/allorders'); 
+        const response = await fetch('https://ecommerce-a7xz.onrender.com/api/v1/admin/allorders'); 
         const data = await response.json();
         // console.log(data);
         if(data.data)
