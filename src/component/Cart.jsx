@@ -12,7 +12,7 @@ function Cart() {
   const[product,setproduct]=useState([]);
   const remove=async(id)=>{
     console.log(id);
-    await axios.put(`/api/v1/removecart/${id}`)
+    await axios.put(`https://ecommerce-a7xz.onrender.com/api/v1/removecart/${id}`)
         .then(function (response) {
            console.log(response);
         })
