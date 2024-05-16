@@ -34,7 +34,7 @@ function Updateproduct() {
     setsucess("");
     try {
       formData.images = images;
-      const res = await fetch(`/api/v1/admin/update/${data._id}`, {
+      const res = await fetch(`https://ecommerce-a7xz.onrender.com/api/v1/admin/update/${data._id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
