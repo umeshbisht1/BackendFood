@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
   const add = async (product) => {
     if (!data) return;
     await axios
-      .post("/api/v1/addtocart", product)
+      .post("https://ecommerce-a7xz.onrender.com/api/v1/addtocart", product)
       .then((res) => {
         dispatch(setvalue(res.data.data.cart.length));
       })
