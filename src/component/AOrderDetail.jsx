@@ -20,7 +20,7 @@ const OrderDetails = ({ order, index }) => {
     // Update the order status in your backend system
     e.preventDefault();
     try {
-      const changed = await fetch(`/api/v1/admin/updatestatus/${order._id}`, {
+      const changed = await fetch(`https://ecommerce-a7xz.onrender.com/api/v1/admin/updatestatus/${order._id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
