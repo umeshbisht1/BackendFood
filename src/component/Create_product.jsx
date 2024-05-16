@@ -42,7 +42,7 @@ function Create_product() {
       //console.log(formDataToSend);
       setloading(true);
       await axios
-        .post("/api/v1/admin/create", formDataToSend)
+        .post("https://ecommerce-a7xz.onrender.com/api/v1/admin/create", formDataToSend)
         .then((res) => {
           setloading(false);
           setmessage("Product Created Sucessfully");
