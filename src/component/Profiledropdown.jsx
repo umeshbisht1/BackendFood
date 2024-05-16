@@ -16,7 +16,7 @@ const ProfileDropdown = () => {
   const logoutuser=async()=>{
     dispatch(logoutStart())
     try {
-      const data = await axios.post("/api/v1/logout");
+      const data = await axios.post("https://ecommerce-a7xz.onrender.com/api/v1/logout");
       dispatch(logoutSuccess(data))
       navigate("/");
      
