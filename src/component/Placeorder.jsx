@@ -48,7 +48,7 @@ const Placeorder = () => {
   };
   const place = async () => {
     try {
-      const place = await fetch("/api/v1/ordernow", {
+      const place = await fetch("https://ecommerce-a7xz.onrender.com/api/v1/ordernow", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
