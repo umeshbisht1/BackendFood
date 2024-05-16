@@ -16,7 +16,7 @@ const Dashboard = () => {
   useEffect(()=>{
            const fetchdata=async()=>{
             try {
-              const res = await fetch('/api/details');
+              const res = await fetch('https://ecommerce-a7xz.onrender.com/api/details');
               if (!res.ok) {
                   throw new Error('Failed to fetch data');
               }
