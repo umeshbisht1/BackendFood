@@ -20,7 +20,7 @@ function SearchResults() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/v1/products${location.search}`);
+        const response = await fetch(`https://ecommerce-a7xz.onrender.com/api/v1/products${location.search}`);
         const data = await response.json();
         setProducts(data.data);
       } catch (error) {
