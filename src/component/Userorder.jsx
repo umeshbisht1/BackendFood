@@ -10,7 +10,7 @@ const Userorder = () => {
   useEffect(() => {
     const fetchorder = async () => {
       try {
-        const order = await fetch(`/api/v1/allorder/${user._id}`);
+        const order = await fetch(`https://ecommerce-a7xz.onrender.com/api/v1/allorder/${user._id}`);
         const data = await order.json();
        setOrders(data.data);
       } catch (error) {
